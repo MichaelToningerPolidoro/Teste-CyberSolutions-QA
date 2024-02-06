@@ -7,21 +7,36 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>testeseleniumcybersolutions</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+
+		<cucumber.version>7.15.0</cucumber.version>
+		<junit.version>5.9.2</junit.version>
+		<selenium.version>4.17.0</selenium.version>
+
+	</properties>
+
 	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.7.1</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.0.0-alpha-7</version>
+			<version>${selenium.version}</version>
 		</dependency>
 
 	</dependencies>
