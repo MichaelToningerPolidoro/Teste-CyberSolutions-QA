@@ -1,7 +1,7 @@
 package br.com.test.core.driver;
 
+import br.com.test.core.settings.EnvVarsProvider;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * TODO: Javadocs
@@ -12,10 +12,10 @@ public final class DriverFactory {
      * TODO: Javadocs
      * */
     public static WebDriver createWebDriver() {
-        // FIXME: Improve here, to change between browsers
-        // TODO: Implement browser change here by env so get and enum that contain configs
-        final WebDriver webDriver = new ChromeDriver();
-        return webDriver;
+        final Browser browser = Browser.valueOf(EnvVarsProvider.getBrowser().toUpperCase());
+        final boolean headless = Boolean.parseBoolean(EnvVarsProvider.getHeadless().toLowerCase());
+
+        return browser.startDriver(browser.getCapabilities(headless));
     }
 
 }
