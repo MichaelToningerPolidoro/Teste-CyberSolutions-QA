@@ -15,33 +15,48 @@ public enum Browser {
     CHROME {
         @Override
         public WebDriver startDriver(Capabilities capabilities) {
-            return new ChromeDriver();
+            return new ChromeDriver((ChromeOptions) capabilities);
         }
 
         @Override
-        public ChromeOptions getCapabilities(boolean headless) {
-            // chrome options
-            // capabilities
-            // chrome options merge with capabilities
-            return null;
+        public ChromeOptions getCapabilities(boolean isHeadless) {
+            final ChromeOptions chromeOptions = new ChromeOptions();
+
+            chromeOptions.addArguments(DriverArguments.STANDARD_CHROMIUM_ARGUMENTS);
+
+            if (isHeadless) {
+                chromeOptions.addArguments(DriverArguments.STANDARD_CHROMIUM_HEADLESS_ARGUMENTS);
+            }
+
+            chromeOptions.setPageLoadStrategy(DriverArguments.STANDARD_PAGE_LOAD_STRATEGY);
+
+            return chromeOptions;
         }
     },
 
     EDGE {
         @Override
         public WebDriver startDriver(Capabilities capabilities) {
-            return new EdgeDriver();
+            return new EdgeDriver((EdgeOptions) capabilities);
         }
 
         @Override
-        public EdgeOptions getCapabilities(boolean headless) {
-            // edge options
-            // capabilities
-            // edge options merge with capabilities
-            return null;
+        public EdgeOptions getCapabilities(boolean isHeadless) {
+            final EdgeOptions edgeOptions = new EdgeOptions();
+
+            edgeOptions.addArguments(DriverArguments.STANDARD_CHROMIUM_ARGUMENTS);
+
+            if (isHeadless) {
+                edgeOptions.addArguments(DriverArguments.STANDARD_CHROMIUM_HEADLESS_ARGUMENTS);
+            }
+
+            edgeOptions.setPageLoadStrategy(DriverArguments.STANDARD_PAGE_LOAD_STRATEGY);
+
+            return edgeOptions;
         }
     };
 
     public abstract WebDriver startDriver(Capabilities capabilities);
-    public abstract Capabilities getCapabilities(boolean headless);
+    public abstract Capabilities getCapabilities(boolean isHeadless);
+
 }
