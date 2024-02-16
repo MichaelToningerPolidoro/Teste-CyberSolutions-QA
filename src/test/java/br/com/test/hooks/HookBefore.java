@@ -9,7 +9,7 @@ import io.cucumber.java.Before;
 public final class HookBefore {
 
     @Before
-    public void before() {
+    public void before() throws InterruptedException {
         DriverManager.initializeWebDriver();
     }
 }
