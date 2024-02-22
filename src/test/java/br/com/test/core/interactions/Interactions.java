@@ -1,5 +1,7 @@
 package br.com.test.core.interactions;
 
+import br.com.test.core.interactions.actions.Attribute;
+import br.com.test.core.interactions.actions.Text;
 import br.com.test.core.interactions.actions.Wait;
 import lombok.Getter;
 
@@ -10,7 +12,6 @@ import lombok.Getter;
 public final class Interactions {
 
     private final Wait wait = new Wait();
-
-    // TODO: Create InteractionsProvider or InteractionsManager
-
+    private final Text text = new Text();
+    private final Attribute attribute = new Attribute();
 }
