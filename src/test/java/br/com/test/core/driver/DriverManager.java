@@ -13,17 +13,13 @@ public final class DriverManager {
      * TODO: Javadocs
      * */
     public static void initializeWebDriver() {
-        getWebDriver();
+        webDriverPool.set(DriverFactory.createWebDriver());
     }
 
     /**
      * TODO: Javadocs
      * */
     public static WebDriver getWebDriver() {
-        if (webDriverPool.get() == null) {
-            webDriverPool.set(DriverFactory.createWebDriver());
-        }
-
         return webDriverPool.get();
     }
 
