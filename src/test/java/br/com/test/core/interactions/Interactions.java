@@ -1,8 +1,6 @@
 package br.com.test.core.interactions;
 
-import br.com.test.core.interactions.actions.Attribute;
-import br.com.test.core.interactions.actions.Text;
-import br.com.test.core.interactions.actions.Wait;
+import br.com.test.core.interactions.actions.*;
 import lombok.Getter;
 
 /**
@@ -11,7 +9,10 @@ import lombok.Getter;
 @Getter
 public final class Interactions {
 
-    private final Wait wait = new Wait();
-    private final Text text = new Text();
     private final Attribute attribute = new Attribute();
+    private final Click click = new Click();
+    private final Combo combo = new Combo();
+    private final Text text = new Text();
+    private final Wait wait = new Wait();
+
 }
