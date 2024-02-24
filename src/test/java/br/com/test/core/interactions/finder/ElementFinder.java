@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
  * */
 public final class ElementFinder {
 
+    private ElementFinder() {}
+
     /**
      * TODO: javadocs
      * */
