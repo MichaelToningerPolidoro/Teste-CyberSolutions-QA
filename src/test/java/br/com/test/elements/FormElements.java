@@ -59,7 +59,6 @@ public final class FormElements {
      * TODO: javadocs
      * */
     public By getSkillComboOption(String skill) {
-        System.out.println("//option[@value='" + skill + "']");
         return By.xpath("//option[@value='" + skill + "']");
     }
 
