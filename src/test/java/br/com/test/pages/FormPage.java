@@ -171,4 +171,95 @@ public final class FormPage {
         return interactions.getAttribute().getText(formElements.getLastNameInput());
     }
 
+    /**
+     * TODO: javadocs
+     * */
+    public String getAddress() {
+        return interactions.getAttribute().getText(formElements.getAddressTextArea());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getEmailAddress() {
+        return interactions.getAttribute().getText(formElements.getEmailAddressInput());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getPhoneNumber() {
+        return interactions.getAttribute().getText(formElements.getPhoneInput());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public boolean isGenderSelected(String gender) {
+        return interactions.getState().isSelected(formElements.getGenderRadioOption(gender));
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public boolean isHobbySelected(String hobby) {
+        return interactions.getState().isSelected(formElements.getHobbiesCheckboxOption(hobby));
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getLanguage() {
+        return interactions.getAttribute().getInnerText(formElements.getLanguagesCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getSkill() {
+        return interactions.getAttribute().getText(formElements.getSkillsCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getCountrySelectCombo() {
+        return interactions.getAttribute().getInnerText(formElements.getCountrySelectCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getDayOfBirth() {
+        return interactions.getAttribute().getText(formElements.getDayOfBirthCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getMonthOfBirth() {
+        return interactions.getAttribute().getText(formElements.getMonthOfBirthCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getYearOfBirth() {
+        return interactions.getAttribute().getText(formElements.getYearOfBirthCombo());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getPassword() {
+        return interactions.getAttribute().getText(formElements.getPasswordInput());
+    }
+
+    /**
+     * TODO: javadocs
+     * */
+    public String getPasswordConfirmation() {
+        return interactions.getAttribute().getText(formElements.getConfirmPasswordInput());
+    }
+
 }
