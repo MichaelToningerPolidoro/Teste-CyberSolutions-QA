@@ -1,7 +1,7 @@
-@tempTest
-Feature: Temp test scenario
+@regression @scenario1 @registry
+Feature: Fill registry page
 
-  Scenario: Test Scenario
+  Scenario: Fill registry page
     Given access automation testing
     When form page was loaded
     Then fill first name "Michael"
