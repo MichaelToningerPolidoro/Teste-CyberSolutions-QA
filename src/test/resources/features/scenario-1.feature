@@ -1,7 +1,7 @@
 @regression @scenario1 @registry
-Feature: Fill registry page
+Feature: Fill registry form
 
-  Scenario: Fill registry page
+  Scenario: Fill registry form
     Given access automation testing
     When form page was loaded
     Then fill first name "Michael"
