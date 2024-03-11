@@ -11,8 +11,7 @@ public final class MenuBarSteps {
     private final MenuBarPage menuBarPage = new MenuBarPage();
 
     @And("click {string} menu and choose option {string}")
-    public void clickOptionSwitchTo(String menu, String option) throws InterruptedException {
+    public void clickOptionSwitchTo(String menu, String option) {
         menuBarPage.clickOptionInMenuBar(menu, option);
-        Thread.sleep(2000); // TODO: remover aqui e a exceção
     }
 }
