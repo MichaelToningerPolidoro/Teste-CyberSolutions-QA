@@ -1,4 +1,4 @@
-@regression @scenario2 @registry
+@regression @scenario2 @iframe
 Feature: Write inside a iframe
 
   Scenario: Write inside a iframe

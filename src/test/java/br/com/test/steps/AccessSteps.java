@@ -13,6 +13,7 @@ public final class AccessSteps {
     * */
     @Given("access automation testing")
     public void accessAutomationTesting() {
+        // FIXME: Create an page or similar entity to abstract this get
         DriverManager.getWebDriver().get("http://demo.automationtesting.in/Register.html");
     }
 
