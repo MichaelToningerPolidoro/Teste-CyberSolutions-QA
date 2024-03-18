@@ -12,6 +12,16 @@ import java.time.Duration;
 public final class Wait {
 
     /**
+     * TODO: javadocs
+     * */
+    public void time(long milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (Exception ignored) {
+        }
+    }
+
+    /**
      * TODO: Javadocs
      * */
     public void waitElementToBeVisible(By by, int timeLimitInSeconds) {
