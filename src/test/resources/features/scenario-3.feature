@@ -1,14 +1,16 @@
-@regression @scenario3 @Datepicker
+@regression @scenario3 @datepicker
 Feature: Datepicker
 
   Background:
     Given access automation testing datepicker
 
     # Change scenario name
+  @disabledDatePicker
   Scenario: Scenario with disabled datepicker
     #Change steps below
-    Given access automation testing datepicker
-    And click "Widgets" menu and choose option "Datepicker"
+#    Given access automation testing datepicker
+#    And click "Widgets" menu and choose option "Datepicker"
+    Given click in disabled datepicker
 
 
     # Change scenario name
