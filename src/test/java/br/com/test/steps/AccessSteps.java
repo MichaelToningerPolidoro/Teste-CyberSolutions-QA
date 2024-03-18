@@ -1,6 +1,6 @@
 package br.com.test.steps;
 
-import br.com.test.core.driver.DriverManager;
+import br.com.test.access.AutomationTestingAccessor;
 import io.cucumber.java.en.Given;
 
 /**
@@ -11,10 +11,9 @@ public final class AccessSteps {
     /*
     * TODO: Some explanation
     * */
-    @Given("access automation testing")
-    public void accessAutomationTesting() {
-        // FIXME: Create an page or similar entity to abstract this get
-        DriverManager.getWebDriver().get("http://demo.automationtesting.in/Register.html");
+    @Given("access automation testing {word}")
+    public void accessAutomationTesting(String page) {
+        new AutomationTestingAccessor().access(page);
     }
 
 }

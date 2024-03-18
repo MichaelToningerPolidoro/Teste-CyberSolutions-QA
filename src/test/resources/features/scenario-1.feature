@@ -2,7 +2,7 @@
 Feature: Fill registry form
 
   Scenario: Fill registry form
-    Given access automation testing
+    Given access automation testing register
     When form page was loaded
     Then fill first name "Michael"
     Then the first name field should be filled with "Michael"
