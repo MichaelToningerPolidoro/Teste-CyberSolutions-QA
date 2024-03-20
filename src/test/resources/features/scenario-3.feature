@@ -11,6 +11,8 @@ Feature: Datepicker
 #    Given access automation testing datepicker
 #    And click "Widgets" menu and choose option "Datepicker"
     Given click in disabled datepicker
+    And select "2023" to disabled datepicker year
+    And select "June" to disabled datepicker month
 
 
     # Change scenario name

@@ -14,4 +14,14 @@ public final class DatePickerSteps {
     public void clickDisabledDatePicker() {
         datePickerPage.clickDisabledDatePicker();
     }
+
+    @And("select {string} to disabled datepicker year")
+    public void selectDisabledDatePickerYear(String year) {
+        datePickerPage.selectDisabledDatePickerYear(year);
+    }
+
+    @And("select {string} to disabled datepicker month")
+    public void selectDisabledDatePickerMonth(String month) {
+        datePickerPage.selectDisabledDatePickerMonth(month);
+    }
 }
