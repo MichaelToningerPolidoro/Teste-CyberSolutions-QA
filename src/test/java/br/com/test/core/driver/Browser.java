@@ -8,8 +8,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
 /**
- * TODO: Javadocs
- * */
+ * Enumeration representing various web browsers.
+ */
 public enum Browser {
 
     CHROME {
@@ -56,7 +56,20 @@ public enum Browser {
         }
     };
 
+    /**
+     * Starts a WebDriver instance with the specified capabilities.
+     *
+     * @param capabilities the desired capabilities for the WebDriver instance.
+     * @return a new WebDriver instance with the specified capabilities.
+     */
     public abstract WebDriver startDriver(Capabilities capabilities);
+
+    /**
+     * Gets the desired capabilities based on the headless mode.
+     *
+     * @param isHeadless true if the browser should run in headless mode, false otherwise.
+     * @return the desired capabilities for the specified headless mode.
+     */
     public abstract Capabilities getCapabilities(boolean isHeadless);
 
 }

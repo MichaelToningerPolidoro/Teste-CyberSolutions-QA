@@ -1,8 +1,8 @@
 package br.com.test.constants;
 
 /**
- * TODO: javadocs
- * */
+ * Utility class containing constants for links to various pages.
+ */
 public final class LinkConstants {
 
     private LinkConstants() {}

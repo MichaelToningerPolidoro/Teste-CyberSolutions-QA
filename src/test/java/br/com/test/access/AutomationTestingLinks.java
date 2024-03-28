@@ -3,8 +3,8 @@ package br.com.test.access;
 import br.com.test.constants.LinkConstants;
 
 /**
- * TODO javadocs
- * */
+ * Enumeration representing links to pages in an automation testing environment.
+ */
 public enum AutomationTestingLinks {
 
     REGISTER() {
@@ -37,5 +37,10 @@ public enum AutomationTestingLinks {
 
     ;
 
+    /**
+     * Returns the link associated with the enum constant.
+     *
+     * @return the link to the page.
+     */
     public abstract String getLink();
 }

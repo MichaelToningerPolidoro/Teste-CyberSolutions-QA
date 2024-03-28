@@ -3,8 +3,8 @@ package br.com.test.core.driver;
 import org.openqa.selenium.PageLoadStrategy;
 
 /**
- * TODO: Javadocs
- * */
+ * Utility class for storing and accessing driver arguments.
+ */
 public final class DriverArguments {
 
     private DriverArguments() {}

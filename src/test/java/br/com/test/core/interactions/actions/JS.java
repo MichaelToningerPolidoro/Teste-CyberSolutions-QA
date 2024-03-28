@@ -6,14 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
 /**
- * TODO: javadocs
+ * Utility class for executing JavaScript code on web elements using Selenium WebDriver.
  */
 public final class JS {
 
     /**
-     * TODO: javadocs
-     * @param by
-     * @param value
+     * Sets the specified attribute to the given value for the web element found by the given locator.
+     *
+     * @param by the locator strategy to find the web element.
+     * @param attribute the name of the attribute to be set.
+     * @param value the value to be set for the attribute.
      */
     public void setAttribute(By by, String attribute, Object value) {
         final String script = "arguments[0]." + attribute + " = " + value.toString();

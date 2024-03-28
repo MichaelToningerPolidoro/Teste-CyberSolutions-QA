@@ -4,8 +4,8 @@ import br.com.test.core.interactions.actions.*;
 import lombok.Getter;
 
 /**
- * TODO: Javadocs
- * */
+ * Utility class for performing various interactions with web elements using Selenium WebDriver.
+ */
 @Getter
 public final class Interactions {
 

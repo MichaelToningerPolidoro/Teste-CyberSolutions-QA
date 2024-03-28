@@ -4,13 +4,15 @@ import br.com.test.core.settings.EnvVarsProvider;
 import org.openqa.selenium.WebDriver;
 
 /**
- * TODO: Javadocs
- * */
+ * Utility class for creating WebDriver instances.
+ */
 public final class DriverFactory {
 
     /**
-     * TODO: Javadocs
-     * */
+     * Creates a new instance of WebDriver with default configurations.
+     *
+     * @return a new instance of WebDriver.
+     */
     public static WebDriver createWebDriver() {
         final Browser browser = Browser.valueOf(EnvVarsProvider.getBrowser().toUpperCase());
         final boolean headless = Boolean.parseBoolean(EnvVarsProvider.getHeadless().toLowerCase());

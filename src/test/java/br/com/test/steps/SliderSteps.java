@@ -5,9 +5,6 @@ import io.cucumber.java.en.And;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Class to handle Slider steps
- */
 public final class SliderSteps {
 
     private final SliderPage sliderPage = new SliderPage();

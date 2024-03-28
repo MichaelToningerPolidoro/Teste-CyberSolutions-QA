@@ -6,9 +6,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.assertj.core.api.Assertions;
 
-/**
- * TODO: javadocs
- * */
 public final class IFrameSteps {
 
     private final IFramePage iFramePage = new IFramePage();

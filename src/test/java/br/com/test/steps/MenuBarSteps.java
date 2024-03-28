@@ -3,9 +3,6 @@ package br.com.test.steps;
 import br.com.test.pages.MenuBarPage;
 import io.cucumber.java.en.And;
 
-/**
- * TODO: JAVADOCS
- * */
 public final class MenuBarSteps {
 
     private final MenuBarPage menuBarPage = new MenuBarPage();

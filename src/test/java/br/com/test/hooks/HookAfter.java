@@ -5,8 +5,8 @@ import br.com.test.core.interactions.InteractionsManager;
 import io.cucumber.java.After;
 
 /**
- * TODO: Javadocs
- * */
+ * Utility class for defining hook methods to be executed after each scenario in a test suite.
+ */
 public final class HookAfter {
 
     @After

@@ -1,29 +1,31 @@
 package br.com.test.core.interactions;
 
 /**
- * TODO: javadocs
- * */
+ * Utility class for managing interactions with web elements using Selenium WebDriver.
+ */
 public final class InteractionsManager {
 
     private static final ThreadLocal<Interactions> interactionsPool = new ThreadLocal<>();
 
     /**
-     * TODO: javadocs
-     * */
+     * Initializes the interaction's manager.
+     */
     public static void initializeInteractions() {
         interactionsPool.set(new Interactions());
     }
 
     /**
-     * TODO: javadocs
-     * */
+     * Retrieves the interactions manager instance.
+     *
+     * @return the interactions manager instance.
+     */
     public static Interactions getInteraction() {
         return interactionsPool.get();
     }
 
     /**
-     * TODO: javadocs
-     * */
+     * Terminates the interaction's manager.
+     */
     public static void killInteractions() {
         interactionsPool.remove();
     }

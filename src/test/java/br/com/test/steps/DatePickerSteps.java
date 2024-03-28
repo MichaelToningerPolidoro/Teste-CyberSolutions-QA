@@ -4,9 +4,6 @@ import br.com.test.pages.DatePickerPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-/**
- * TODO: javadocs
- * */
 public final class DatePickerSteps {
 
     private final DatePickerPage datePickerPage = new DatePickerPage();

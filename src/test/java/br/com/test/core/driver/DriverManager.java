@@ -3,8 +3,8 @@ package br.com.test.core.driver;
 import org.openqa.selenium.WebDriver;
 
 /**
- * TODO: Javadocs
- * */
+ * Utility class for managing WebDriver instances.
+ */
 public final class DriverManager {
 
     private DriverManager() {}
@@ -12,22 +12,24 @@ public final class DriverManager {
     private static final ThreadLocal<WebDriver> webDriverPool = new ThreadLocal<>();
 
     /**
-     * TODO: Javadocs
-     * */
+     * Initializes the WebDriver instance for the current test execution.
+     */
     public static void initializeWebDriver() {
         webDriverPool.set(DriverFactory.createWebDriver());
     }
 
     /**
-     * TODO: Javadocs
-     * */
+     * Gets the current WebDriver instance associated with the current thread.
+     *
+     * @return the current WebDriver instance.
+     */
     public static WebDriver getWebDriver() {
         return webDriverPool.get();
     }
 
     /**
-     * TODO: Javadocs
-     * */
+     * Kills the WebDriver instance associated with the current thread.
+     */
     public static void killWebDriver() {
         final WebDriver webDriver = getWebDriver();
 

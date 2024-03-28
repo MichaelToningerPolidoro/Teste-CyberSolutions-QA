@@ -3,9 +3,6 @@ package br.com.test.elements;
 import lombok.Getter;
 import org.openqa.selenium.By;
 
-/**
- * TODO: Javadocs
- * */
 @Getter
 public final class FormElements {
 
@@ -28,9 +25,6 @@ public final class FormElements {
     private final By confirmPasswordInput = By.xpath("//input[@id='secondpassword']");
     private final By submitButton = By.xpath("//button[@id='submitbtn']");
 
-    /**
-     * TODO: javadocs
-     * */
     public By getGenderRadioOption(String gender) {
         if (gender.equalsIgnoreCase("male")) {
             gender = "Male";
@@ -41,51 +35,30 @@ public final class FormElements {
         return By.xpath("//input[@type='radio' and @value='" + gender + "']");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getHobbiesCheckboxOption(String hobbie) {
         return By.xpath("//input[@type='checkbox' and @value='" + hobbie + "']");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getLanguageComboOption(String language) {
         return By.xpath("//a[contains(text(), '" + language + "')]");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getSkillComboOption(String skill) {
         return By.xpath("//option[@value='" + skill + "']");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getSelectCountryComboOption(String country) {
         return By.xpath("//ul[@id='select2-country-results']//li[contains(text(), '" + country + "')]");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getDayOfBirthOption(String day) {
         return By.xpath("//option[@value='" + day + "']");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getMonthOfBirthOption(String month) {
         return By.xpath("//option[@value='" + month + "']");
     }
 
-    /**
-     * TODO: javadocs
-     * */
     public By getYearOfBirth(String year) {
         return By.xpath("//option[@value='" + year + "']");
     }

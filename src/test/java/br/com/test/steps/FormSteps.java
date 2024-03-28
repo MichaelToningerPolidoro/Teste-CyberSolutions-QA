@@ -6,9 +6,6 @@ import io.cucumber.java.en.When;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * TODO: Javadocs
- * */
 public final class FormSteps {
 
     private final FormPage formPage = new FormPage();
