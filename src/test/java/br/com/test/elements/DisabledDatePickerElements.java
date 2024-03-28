@@ -17,7 +17,7 @@ public final class DisabledDatePickerElements {
     /**
      * TODO: JAVADOCS
      * */
-    public final By getDay(String day) {
+    public By getDay(String day) {
         return By.xpath("//table[@class='ui-datepicker-calendar']//a[contains(text(), '" + day + "')]");
     }
 }

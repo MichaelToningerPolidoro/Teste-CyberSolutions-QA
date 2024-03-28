@@ -24,6 +24,13 @@ public final class EnvVarsProvider {
     /**
      * TODO: Javadocs
      * */
+    public static String getParallelScenariosCount() {
+        return getEnv("parallel_scenarios_count");
+    }
+
+    /**
+     * TODO: Javadocs
+     * */
     private static String getEnv(String var) {
         final String value = System.getenv(var);
 

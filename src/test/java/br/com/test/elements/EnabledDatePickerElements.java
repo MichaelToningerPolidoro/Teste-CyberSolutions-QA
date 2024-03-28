@@ -1,10 +1,12 @@
 package br.com.test.elements;
 
+import lombok.Getter;
 import org.openqa.selenium.By;
 
 /**
  * TODO javadocs
  * */
+@Getter
 public final class EnabledDatePickerElements {
 
     private final By enabledDatePicker = By.xpath("//input[@id='datepicker2']");

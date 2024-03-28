@@ -34,4 +34,18 @@ public final class Wait {
     public void waitElementToBeVisible(By by, Duration durationLimit) {
         WaitFactory.getWait(durationLimit).until(ExpectedConditions.visibilityOfElementLocated(by));
     }
+
+    /**
+     * TODO: Javadocs
+     * */
+    public void waitElementToBeInteractable(By by, int timeLimitInSeconds) {
+        waitElementToBeInteractable(by, Duration.ofSeconds(timeLimitInSeconds));
+    }
+
+    /**
+     * TODO: Javadocs
+     * */
+    public void waitElementToBeInteractable(By by, Duration durationLimit) {
+        WaitFactory.getWait(durationLimit).until(ExpectedConditions.elementToBeClickable(by));
+    }
 }
