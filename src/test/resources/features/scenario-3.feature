@@ -4,7 +4,6 @@ Feature: Datepicker
   Background:
     Given access automation testing datepicker
 
-    # Change scenario name
   @disabledDatePicker
   Scenario: Scenario with disabled datepicker
     Given click in disabled datepicker
@@ -13,8 +12,6 @@ Feature: Datepicker
     And select disabled datepicker day "18"
     Then validate disabled datepicker date "06/18/2023"
 
-
-    # Change scenario name
   @enabledDatePicker
   Scenario: Scenario with enabled datepicker
     Given click in enabled datepicker

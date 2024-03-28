@@ -12,27 +12,27 @@ public final class Attribute {
      * TODO: javadocs
      * */
     public String getText(By by) {
-        return getAttribute(by, "value");
+        return get(by, "value");
     }
 
     /**
      * TODO: javadocs
      * */
     public String getInnerText(By by) {
-        return getAttribute(by, "innerText");
+        return get(by, "innerText");
     }
 
     /**
      * TODO: javadocs
      * */
     public String getTitle(By by) {
-        return getAttribute(by, "title");
+        return get(by, "title");
     }
 
     /**
      * TODO: javadocs
      * */
-    private String getAttribute(By by, String attribute) {
+    public String get(By by, String attribute) {
         return ElementFinder.findElement(by).getAttribute(attribute);
     }
 }
