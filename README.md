@@ -1,22 +1,34 @@
-<h1 align="center">Teste cybersolutions (QA)</h1>
+<h1 align="center">Cyber Solutions's QA Test</h1>
 
-## <a name="indice">Índice</a> :link:
-  - [1. Sobre o repositório](#sobre-repositorio)
-  - [2. Tecnologias utilizadas](#tecnologias-utilizadas)
+This test have been made to a job opportunity in Cyber Solutions.
+It is a refactored version where I rearranged all classes to improve the architecture, rewrite xpath and added some features in project
 
-***
+## Technologies 🤖
 
-## <a name="sobre-repositorio">1. Sobre o repositório</a> :bookmark_tabs:
-  Esse repositório é destinado à um teste de automação a pedido da cybersolutions. O mesmo
-  consiste em automatizar 4 tarefas em um site específico, a partir de testes funcionais
-  automatizados.
-  
-  [Voltar ao índice](#indice)
- 
-## <a name="tecnologias-utilizadas">2. Tecnologias utilizadas</a> :computer:
-  As tecnologias utilizadas nesse desafio foram:
-  - Java
-  - Selenium WebDriver
-  - Junit
-    
-  [Voltar ao índice](#indice)
+- java 17
+- Selenium 4
+- Cucumber 7
+- AssertJ
+
+## What's in the project 🤔
+
+- Parallel execution
+- Browser, headless and thread count configurable via environment variables
+- Some javadocs
+- Dynamic xpath
+
+## What I practiced 🏋️
+
+- English
+- Architecting
+- Parallel execution tests
+- Xpath handling
+
+## What about scenarios? 🥒📝
+
+- 1º -> Fill fields into register page
+- 2º -> Write a text inside a IFrame
+- 3º -> Select dates into disabled and enabled datepicker, only using buttons
+- 4º -> Set slide to a specific value
+
+Thank you so much for reading this! 🙏
