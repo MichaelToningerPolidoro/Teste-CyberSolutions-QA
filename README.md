@@ -1,7 +1,7 @@
-<h1 align="center">Cyber Solutions's QA Test</h1>
+<h1 align="center">Cyber Solutions's QA Test (Refactored)</h1>
 
-This test have been made to a job opportunity in Cyber Solutions.
-It is a refactored version where I rearranged all classes to improve the architecture, rewrite xpath and added some features in project
+This test have been made to a job opportunity in Cyber Solutions in 2021.
+It is a refactored version where I rearranged all classes to improve the architecture, rewrite xpath and added some features in project.
 
 ## Technologies 🤖
 
@@ -24,7 +24,7 @@ It is a refactored version where I rearranged all classes to improve the archite
 - Parallel execution tests
 - Xpath handling
 
-## What about scenarios 🥒📝
+## What about scenarios 📝
 
 - 1º Fill fields into register page
 - 2º Write a text inside a IFrame
